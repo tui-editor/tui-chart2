@@ -9,11 +9,11 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("raphael"));
+		module.exports = factory(require("raphael2"));
 	else if(typeof define === 'function' && define.amd)
-		define(["raphael"], factory);
+		define(["raphael2"], factory);
 	else if(typeof exports === 'object')
-		exports["chart"] = factory(require("raphael"));
+		exports["chart"] = factory(require("raphael2"));
 	else
 		root["tui"] = root["tui"] || {}, root["tui"]["chart"] = factory(root["Raphael"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_4__) {
